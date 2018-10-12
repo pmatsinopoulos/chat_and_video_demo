@@ -7,7 +7,4 @@ video {
     width: 320px;
 }
 
-video {
-   filter: hue-rotate(180deg) saturate(200%);
- }
 

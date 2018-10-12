@@ -9,16 +9,15 @@
         <link rel="stylesheet" type="text/css" href="{% static 'main/css/main.css' %}">
     </head>
     <body>
-        <video id="localVideo" autoplay playsinline></video>
-        <video id="remoteVideo" autoplay playsinline></video>
+        <textarea id="dataChannelSend" disabled placeholder="Please Start, enter some text, then press Send"></textarea>
+        <textarea id="dataChannelReceive" disabled></textarea>
 
-        <div>
+        <div id="buttons">
             <button id="startButton">Start</button>
-            <button id="callButton">Call</button>
-            <button id="hangupButton">Hang Up</button>
+            <button id="sendButton">Send</button>
+            <button id="closeButton">Stop</button>
         </div>
-
         <script type="text/javascript" src="{%  static 'main/javascripts/lib/adapter.js' %}"></script>
-        <script type="text/javascript" src="{% static 'main/javascripts/main.js' %}"></script>
+        <script type="text/javascript" src="{% static 'main/javascripts/main-chat.js' %}"></script>
     </body>
 </html>

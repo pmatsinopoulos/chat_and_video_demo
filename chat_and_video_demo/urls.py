@@ -21,5 +21,6 @@ from main import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^$', views.home)
+    url(r'^video$', views.home),
+    url(r'^chat$', views.chat)
 ]
